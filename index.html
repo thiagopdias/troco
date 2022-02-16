@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 - Troco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DESAFIO 2</h1>
+    <main id="corpo">
+        <div id="info">
+            <h3 id="titulo">Digite os valores</h3>
+
+            <div class="paragrafos">
+                <input type="number" name="produto" id="produto" class="dados" min="0" placeholder="Valor do produto:">
+            </div>
+
+            <div class="paragrafos">
+                <input type="number" name="troco" id="recebido" class="dados" min="0" placeholder="Valor do recebido:">
+            </div>
+
+            <div id="botao">
+                <input type="button" value="Calcular troco" class="botao" onclick="calcularTroco()">
+            </div>
+        </div>
+
+        <div id="resposta">
+            <h3 id="title">Resultado</h3>
+            
+        </div>
+    </main>  
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2F2325;
+    color: #BCAFA7;
+    font-family: 'Concert One', cursive;
+    overflow: hidden;
+}
+
+h1 {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 3em;
+    color: #FFF2E7;
+    border-bottom: 2px solid #FFF2E7;
+}
+
+main {
+    max-width: 60vw;
+    min-height: 60vh;
+    background-color: #483636;
+    margin: 145px auto;
+    display: flex;
+    padding: 0 10px;
+    border: 1px solid #FFF2E7;
+    border-radius: 10px;
+}
+
+h3#titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: #FFF2E7;
+}
+
+div#info {
+    width: 55vw;
+    flex-direction: column;
+    align-self: center;
+    border-right: 1px solid #FFF2E7;
+}
+
+div.paragrafos {
+    color: #F4E7DC;
+    font-size: 1.3em;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Concert One', cursive;
+    text-align: center;
+}
+
+input.dados {
+    background-color: #C8BAB2;
+    border: none;
+    min-width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 1.1em;
+}
+
+div#botao {
+    text-align: center;
+}
+
+input.botao {
+    margin-top: 15px;
+    width: 220px;
+    height: 30px;
+    background-color: #C8BAB2;
+    border: none;
+    border-radius: 5px;
+    color: #2F2325;
+    font-weight: bolder;
+    font-size: 1.1em;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Concert One', cursive;
+}
+
+input.botao:hover {
+    background-color: #2F2325;
+    color: #F4E7DC;
+}
+
+div#resposta {
+    width: 55vw;
+    flex-direction: column;
+    align-self: center;
+}
+
+h3#title {
+    text-align: center;
+    font-size: 1.3em;
+    color: #FFF2E7;
+}
+
+div#resposta > p {
+    padding-left: 25px;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, #83ACB0, #EFC764);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width: 987px) {
+    main {
+        height: 65vh;
+        padding: 0 5px;
+    }
+
+    p.paragrafos {
+        margin-left: 5px;
+        text-align: left;
+    }
+
+    input.dados {
+        min-width: 100%;
+    }
+}
+
+@media(max-width: 846px) {
+    main {
+        display: block;
+        height: 100%;
+        margin: 15px auto;
+    }
+
+    div#info {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        border-right: none;
+        border-bottom: 1px solid #FFF2E7;
+    }
+}
+
+@media(max-width: 505px) {
+    h3#titulo {
+        font-size: 1.1em;
+    }
+
+    p.paragrafos {
+        font-size: 1.1em;
+    }
+
+    input.botao {
+        font-size: 1.1em;
+    }
+
+    h3#title {
+        font-size: 1.1em;
+    }
+
+    div#resposta > p {
+        font-size: 1.1em;
+    }
+}
+
+@media(max-width: 385px) {
+    div#info {
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+
+    input.botao {
+        width: 150px;
+        height: 20px;
+    }
+}
+
+@media(max-width: 345px) {
+    main {
+        /*height: 100%;*/
+        margin: 0 auto;
+    }
+
+    input.dados{
+        width: 70%
+    } 
+
+    input.botao {
+        width: 100px;
+    }
+}
