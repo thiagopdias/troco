@@ -18,7 +18,6 @@ function calcularTroco() {
     resposta.innerHTML = ''
     resposta.innerHTML += `<p>Seu troco é: ${troco}</p>`
 
-    //let umCentavo = 0
     let cincoCentavos = 0
     let dezCentavos = 0
     let vinteCincoCentavos = 0
@@ -45,13 +44,13 @@ function calcularTroco() {
         } else {
             resultadoTroco = resultadoTroco - 0.01
             resposta.innerHTML = ''
-            resposta.innerHTML += '<p>Infelizmente no Brasil não temos mais a moeda de R$0,01 centavo, então seu troco é R$0,00</p>'
+            resposta.innerHTML += `<p>Infelizmente no Brasil não temos mais a moeda de R$0,01 centavo. Seu troco é R$ ${troco}. Então você poderá receber:</p>`
         }
     }
 
-    resposta.innerHTML += `<p>Você poderá receber tantas ${umReal} moedas de R$1</p>`
-    resposta.innerHTML += `<p>Você poderá receber tantas ${ciquentaCentavos} moedas de R$0,50<p/>`
-    resposta.innerHTML += `<p>Você poderá receber tantas ${vinteCincoCentavos} moedas de R$0,25<p/>`
-    resposta.innerHTML += `<p>Você poderá receber tantas ${dezCentavos} moedas de R$0,10<p/>`
-    resposta.innerHTML += `<p>Você poderá receber tantas ${cincoCentavos} moedas de R$0,05<p/>`
+    resposta.innerHTML += `<p>Você poderá receber ${umReal} moedas de R$1,00</p>`
+    resposta.innerHTML += `<p>Você poderá receber ${ciquentaCentavos} moedas de R$0,50<p/>`
+    resposta.innerHTML += `<p>Você poderá receber ${vinteCincoCentavos} moedas de R$0,25<p/>`
+    resposta.innerHTML += `<p>Você poderá receber ${dezCentavos} moedas de R$0,10<p/>`
+    resposta.innerHTML += `<p>Você poderá receber ${cincoCentavos} moedas de R$0,05<p/>`
 }

@@ -59,7 +59,7 @@ div.paragrafos {
 input.dados {
     background-color: #C8BAB2;
     border: none;
-    min-width: 300px;
+    min-width: 200px;
     height: 30px;
     border-radius: 5px;
     padding-left: 5px;
@@ -123,7 +123,7 @@ div#resposta > p {
     }
 
     input.dados {
-        min-width: 100%;
+        width: 100%;
     }
 }
 
@@ -183,7 +183,7 @@ div#resposta > p {
     }
 
     input.dados{
-        width: 70%
+        width: 50% !important
     } 
 
     input.botao {
